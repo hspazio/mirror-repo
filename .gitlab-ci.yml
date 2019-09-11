@@ -1,5 +1,8 @@
 always-run:
   script: echo 'this should always run'
+  except:
+    refs:
+      - branches
   
 on-pull-requests:
   script: echo 'this should run on pull requests'
